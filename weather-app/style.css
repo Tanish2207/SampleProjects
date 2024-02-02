@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+main {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    /* object-fit: fill; */
+}
+
+.place {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    color: white;
+    font-size: large;
+    transform: translate(-50%, 0%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg {
+    padding: 0 10px;
+}
+
+span {
+    content: "\00B0";
+}
+
+.current-temp {
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.hero-cont {
+    width: 85vw;
+    height: 20vh;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: antiquewhite; */
+
+}
+
+.weather-icon {
+    text-align: center
+}
+
+.week-data {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* &:nth-child(even){
+        background-color: #fff;
+    } */
+    width: 100%;
+}
+
+.week-data:hover {
+    background-color: #d2d2d2;
+    transition: 200ms;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.weather-icon svg {
+    width: 94px;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: #989898;
+    padding: 15px 32px;
+    border-radius: 4px;
+    text-align: center;
+    width: 20%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+button:hover {
+    background-color: #434343;
+    transition: 200ms;
+}
+
+@media only screen and (max-width: 750px) {
+    .hero-cont{
+        flex-direction: column;
+    }
+    hr{
+        display: none;
+    }
+    .week-data{
+        margin-bottom: 14px;
+    }
+}
